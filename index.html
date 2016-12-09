@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/notosansthaana.css);
+        *{font-family: 'Noto Sans Kannada', sans-serif;
+            
+        }
+    
+        body,h1,h2,h3,h4,h5,h6,p{
+            margin: 0;
+            padding: 0;
+            
+        }
+/*        圖片*/
+        img{
+            width: 100%;
+            vertical-align: top;
+            
+        }
+/*        浮動修復*/
+        .clearfix::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+/*        滿版*/
+        .full-width{
+            width: 100%;
+        }
+/*        固定寬度*/
+        .fixed-width{
+            width: 1200px;
+            margin: auto
+        }
+/*        3欄*/
+        .col-3{
+            float: left;
+            width: 380px;
+            margin-left: 10px;
+            margin-right: 
+        }
+/*        4欄*/
+        .col-4{
+            float: left;
+            width: 280px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        nav .logo{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: #000000;            
+        }
+        nav .menu{
+            float: right;
+        
+        }
+        nav .menu ul{
+            margin: 0;
+            padding: 0;
+        }
+        nav .menu li{
+            float:left;
+            list-style-type: none;
+        }
+        nav .menu a{
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 100px;
+            line-height: 100px;
+            color: #000000;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        header{
+            background-image: url(http://www.designcouncil.org.uk/sites/default/files/styles/dc_share_image/public/assets/images/DesignEconomy_banner%203.jpg?itok=B9XhMddM);
+            background-size: cover;
+            height: 600px;
+            
+/*            padding-top: 250px;*/
+/*            padding-bottom: 250px;*/
+            
+
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+            
+        }
+        
+        header::before{
+            content:"";
+            display:inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+        header .content{
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #ffffff;
+            line-height:1.3;
+            letter-spacing:1px;
+                
+        }
+        header a{
+            color: aliceblue;
+            text-decoration: none;
+         
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed-width">
+        <div class="logo"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>    
+    </nav>
+    
+    <header class="full-width">
+        <div class="content">
+            <h1>DESIGN</h1>
+            <p>The Design Economy</p>
+            <a href="#">—</a>
+        </div>
+    </header>
+</body>
+</html>
